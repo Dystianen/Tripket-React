@@ -1,0 +1,69 @@
+.hero-container {
+  background: url('https://maxcdn.icons8.com/app/uploads/2019/06/digital-illustration-brian-edward-miller-18.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.ant-tabs {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.ant-tabs-tab {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.ant-tabs-tab-active {
+  /* background-color: #1da57a; */
+  /* color: white; */
+}
+
+.ant-tabs-top > .ant-tabs-nav,
+.ant-tabs-bottom > .ant-tabs-nav,
+.ant-tabs-top > div > .ant-tabs-nav,
+.ant-tabs-bottom > div > .ant-tabs-nav {
+  margin: 0;
+}
+
+.ant-tabs-content-holder {
+  margin: 0.5rem;
+}
+
+.hero-container > h1 {
+  color: white;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: white;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+}
