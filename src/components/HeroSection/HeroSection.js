@@ -1,5 +1,5 @@
 // Assets
-import React from 'react';
+import React, {useState} from 'react';
 import './HeroSection.css';
 import '../../App.less';
 
@@ -15,6 +15,15 @@ const { Option } = Select;
 function HeroSection() {
   const [form] = Form.useForm();
 
+  const [selectedGroupKey, setselectedGroupKey] = useState(1);
+  const formGroup = [
+    {
+      key: "train",
+      departure: "Departure Station",
+      till: "Arrived Station"
+    }
+  ];
+  const selectedGroup = formGroup.find(it => it.key === selectedGroupKey);
   return (
     <div className='hero-container'>
       <Tabs defaultActiveKey='train' centered>
@@ -35,7 +44,7 @@ function HeroSection() {
           }
           key='train'>
           <Form form={form} name='control-hooks' layout='inline'>
-            <Form.Item name='Departure Station' label='From'>
+            <Form.Item name="Departure Station" label='From'>
               <Select placeholder='Select Departure Station' allowClear>
                 <Option value='wakanda'>Wakanda</Option>
                 <Option value='asgard'>Asgard</Option>
@@ -46,7 +55,7 @@ function HeroSection() {
                 <Option value='pekalongan'>Pekalongan</Option>
               </Select>
             </Form.Item>
-            <Form.Item name='Arrival Station' label='To'>
+            <Form.Item name="Arrived Station" label='To'>
               <Select placeholder='Select Arrival Station' allowClear>
                 <Option value='wakanda'>Wakanda</Option>
                 <Option value='asgard'>Asgard</Option>

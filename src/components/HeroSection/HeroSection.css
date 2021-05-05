@@ -14,16 +14,13 @@
 .ant-tabs {
   background-color: white;
   border-radius: 10px;
+  width: 40%;
+  align-items: center;
 }
 
 .ant-tabs-tab {
   font-size: 1.5rem;
   padding: 1rem;
-}
-
-.ant-tabs-tab-active {
-  /* background-color: #1da57a; */
-  /* color: white; */
 }
 
 .ant-tabs-top > .ant-tabs-nav,

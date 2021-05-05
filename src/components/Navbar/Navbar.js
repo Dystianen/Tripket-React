@@ -30,7 +30,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/app/home' className='navbar-logo' onClick={closeMobileMenu}>
             <DingdingOutlined /> TRIPKET
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -38,27 +38,22 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/app/hotel' className='nav-links' onClick={closeMobileMenu}>
                 Hotel
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/app/train' className='nav-links' onClick={closeMobileMenu}>
                 Train
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/app/plane' className='nav-links' onClick={closeMobileMenu}>
                 Plane
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/app/bus' className='nav-links' onClick={closeMobileMenu}>
                 Bus
               </Link>
             </li>
