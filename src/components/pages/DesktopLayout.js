@@ -23,14 +23,6 @@ export const DesktopLayout = () => {
           <AppRoute/>
         </div>
       </Content>
-      <Footer 
-      style={{ 
-        textAlign: "center",
-        color: "white",
-        backgroundColor: "rgb(13, 110, 253)"
-      }}>
-        Trpket ©2019 Created by tripkets
-      </Footer>
     </Layout>
   );
   // return <Layout

@@ -1,9 +1,9 @@
 import {AnimatedSwitch} from "react-router-transition";
 import {Redirect, Route, Switch} from "react-router-dom";
 import {PublicRoute} from "../components/PublicRoute";
-import {Login} from "../pages/Login/Login";
-import {App} from "../pages/App/App";
-import Home from "../pages/Home";
+import {Login} from "../components/pages/Login";
+import App from "../components/pages/App";
+import Home from "../components/pages/Home";
 
 export const AppRoute = () => {
     return <Switch>
