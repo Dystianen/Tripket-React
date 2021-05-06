@@ -26,6 +26,11 @@
 .button {
   width: 4rem;
   float: right;
+}
 
+.arrow{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 

@@ -74,7 +74,7 @@ function TicketTrain() {
                   <h2>{ list.from }</h2>
                   <h4>{ list.time_to_go }</h4>
                 </Col>
-                <Col span={4}>
+                <Col span={4} className="arrow">
                   <CgArrowLongRight />
                 </Col>
                 <Col span={10}>
