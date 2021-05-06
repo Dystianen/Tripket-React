@@ -71,15 +71,15 @@ function TicketTrain() {
             }}>
               <Row>
                 <Col span={10}>
-                  <h2>{ list.from }</h2>
-                  <h4>{ list.time_to_go }</h4>
+                  <h4>{ list.from }</h4>
+                  <h6>{ list.time_to_go }</h6>
                 </Col>
                 <Col span={4} className="arrow">
                   <CgArrowLongRight />
                 </Col>
                 <Col span={10}>
-                  <h2>{ list.to }</h2>
-                  <h4>{ list.time_to_arrived }</h4>
+                  <h4>{ list.to }</h4>
+                  <h6>{ list.time_to_arrived }</h6>
                 </Col>
                 <Col span={24}>
                   <Button type="primary" size={"size"} className="button" onClick={showModal}>Order</Button>
