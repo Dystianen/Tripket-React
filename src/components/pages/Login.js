@@ -3,7 +3,7 @@ import {observer} from 'mobx-react-lite';
 import {useStore} from "../../utils/useStore";
 import {Button, Card, Checkbox, Col, Form, Input, Row, Typography} from 'antd';
 import {LockOutlined, UserOutlined} from '@ant-design/icons';
-import {useHistory} from "react-router-dom";
+import {useHistory, Link} from "react-router-dom";
 
 export const Login = observer(() => {
     const store = useStore();
@@ -46,11 +46,11 @@ export const Login = observer(() => {
                                 color: "#413d3e",
                             }}
                         >
-                            Boilerplate
+                            Tripket
                         </Typography.Paragraph>
                     </div>
                     <Card
-                        style={{width: 320, textAlign: 'center'}}
+                        style={{width: 320, textAlign: 'center', height: 'auto'}}
                         headStyle={{fontSize: 13, fontWeight: 200}}
                         className={"shadow"}
                         bordered={true}
@@ -128,6 +128,14 @@ export const Login = observer(() => {
                                         className="login-form-button">
                                     Sign In
                                 </Button>
+                                <Link to={"/app/signup"} style={{
+                                    display: "flex",
+                                    justifyContent: "flex-end",
+                                    textAlign: "right",
+                                    marginTop: "1rem"
+                                }}>
+                                    You don't have an account ?
+                                </Link>
                             </Form.Item>
                         </Form>
                     </Card>
