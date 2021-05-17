@@ -1,18 +1,23 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { StoreProvider } from "./utils/useStore";
-import { MainRoutes } from "./routes";
-import "./custom.less";
-// import "./Style.css";
-import ParticlesBg from "particles-bg";
+// ESSENTSIALS
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { StoreProvider } from './utils/useStore';
+import { MainRoutes } from './routes';
+
+// STYLES
+import './custom.less';
+
+// COMPONENTS
+import ParticlesBg from 'particles-bg';
+import Navbar from './component/Navbar/Navbar';
 
 export const Main = () => {
-    return (
-        <StoreProvider>
-            <Router>
-                <MainRoutes />
-                <ParticlesBg color={"#ababab"} num={20} type={"cobweb"} bg={true} />
-            </Router>
-        </StoreProvider>
-    );
+  return (
+    <StoreProvider>
+      <Router>
+        <Navbar />
+        <MainRoutes />
+      </Router>
+    </StoreProvider>
+  );
 };

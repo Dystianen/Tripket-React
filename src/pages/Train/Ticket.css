@@ -1,0 +1,37 @@
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+}
+.ant-card {
+  width: 60%;
+}
+
+.tickets-container > .ant-card {
+  margin: 0.2rem;
+}
+
+.ticket > .ant-card-body {
+  /* background: lawngreen; */
+}
+
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+.ant-row > h4 {
+  text-align: center;
+}
+
+.ant-card-head-title > h4 {
+  text-align: left;
+}
+
+.ant-card-extra {
+}

@@ -1,0 +1,19 @@
+.train-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-width: 50%;
+  margin: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ant-form {
+  background: white;
+  /* margin: 1rem; */
+  padding: 1rem;
+}
+h1 {
+  color: #f2a413;
+}
