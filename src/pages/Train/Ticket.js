@@ -129,18 +129,12 @@ function Ticket() {
           </h4>
         }
         bordered={false}
-        extra={
-          <Row gutter={16}>
-            <Col>
-              <h4>{schedule.price}</h4>
-            </Col>
-            <Col>
-              <Button secondary type='primary' onClick={showModal}>
-                Order
-              </Button>
-            </Col>
-          </Row>
-        }>
+        extra={<h4>Rp. {schedule.price}</h4>}
+        actions={[
+          <Button secondary type='primary' onClick={showModal}>
+            Order
+          </Button>,
+        ]}>
         <Row justify='end'>
           <Col span={10}>
             <h4>{schedule.depart.station}</h4>

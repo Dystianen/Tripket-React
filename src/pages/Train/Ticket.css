@@ -9,6 +9,10 @@
 .ant-card {
   width: 60%;
 }
+.ant-card-actions {
+  float: right;
+  padding-right: 1.5rem !important;
+}
 
 .tickets-container > .ant-card {
   margin: 0.2rem;
