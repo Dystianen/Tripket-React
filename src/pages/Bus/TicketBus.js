@@ -163,7 +163,7 @@ function TicketBus() {
       <Modal title='Book Ticket' visible={visible} onOk={handleOk} confirmLoading={confirmLoading} onCancel={handleCancel}>
         <Form form={form} name='search-train'>
           <Form.Item label='Kereta'>
-            <Input value='Kamandaka' disabled={true} prefix={<IoTrain />} />
+            <Input value='Kamandaka' disabled={false} prefix={<IoTrain />} />
           </Form.Item>
           <Form.Item label='Depart'>
             <Input value='Pekalongan' disabled={true} prefix={<IoArrowUpCircle />} />
