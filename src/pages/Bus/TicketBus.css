@@ -18,10 +18,6 @@
     margin: 0.2rem;
   }
   
-  .ticket > .ant-card-body {
-    /* background: lawngreen; */
-  }
-  
   h2,
   h3,
   h4,
@@ -36,7 +32,3 @@
   .ant-card-head-title > h4 {
     text-align: left;
   }
-  
-  .ant-card-extra {
-  }
-  
