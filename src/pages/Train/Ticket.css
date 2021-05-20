@@ -1,7 +1,6 @@
 .tickets-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   width: 100%;
   margin: 2rem;
@@ -9,17 +8,20 @@
 .ant-card {
   width: 60%;
 }
-.ant-card-actions {
+/* .ant-card-actions {
   float: right;
   padding-right: 1.5rem !important;
+} */
+
+.ant-card-actions > li > span {
+  display: flex !important;
+  justify-content: flex-end;
+  margin-inline-end: 1.5rem;
+  cursor: default !important;
 }
 
 .tickets-container > .ant-card {
   margin: 0.2rem;
-}
-
-.ticket > .ant-card-body {
-  /* background: lawngreen; */
 }
 
 h2,
@@ -35,7 +37,4 @@ h5 {
 
 .ant-card-head-title > h4 {
   text-align: left;
-}
-
-.ant-card-extra {
 }
