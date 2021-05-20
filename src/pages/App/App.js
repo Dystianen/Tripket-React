@@ -1,7 +1,7 @@
 import React from "react";
-import {DesktopLayout} from "./DesktopLayout";
+import {AppRoute} from "../../routes/app";
 
 export const App = () => {
     // TODO: add mobile layout
-    return <DesktopLayout/>;
+    return <AppRoute />;
 };
