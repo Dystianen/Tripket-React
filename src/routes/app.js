@@ -9,6 +9,8 @@ import { Profile } from '../pages/Profile/Profile';
 
 import { Home } from '../pages/Home/Home';
 import { Train } from '../pages/Train/Train.js';
+import { Bus } from '../pages/Bus/Bus.js';
+import { Plane } from '../pages/Plane/Plane';
 
 export const AppRoute = () => {
   return (
@@ -18,6 +20,12 @@ export const AppRoute = () => {
       </Route>
       <Route path={'/app/train'}>
         <Train />
+      </Route>
+      <Route path={'/app/bus'}>
+        <Bus />
+      </Route>
+      <Route path={'/app/plane'}>
+        <Plane />
       </Route>
       <Route path={'/app/about'}>
         <About />
